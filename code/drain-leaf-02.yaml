@@ -1,0 +1,9 @@
+bgp_status:
+  # Get the BGP status of the device leaf
+  action: napalm.get_bgp_neighbors
+  input:
+    hostname: "{{ _.dev_name }}"
+    driver: "junos"
+    credentials: "stackstorm"
+  on-success:
+    - evaluate_bgp_output

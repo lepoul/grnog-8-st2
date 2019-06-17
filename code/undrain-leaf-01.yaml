@@ -1,0 +1,6 @@
+evaluate_bgp_status:
+  action: grnet.evaluate_bgp_peers_status
+  input:
+    bgp_state: "{{ _.bgp_after_status }}"
+  on-success:
+    - restore_port_state

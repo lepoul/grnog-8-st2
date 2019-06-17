@@ -1,0 +1,13 @@
+ping_host:
+  wait-before: 360
+  action: core.local
+  input:
+    cmd: "ping -c 1 -w 1 {{ _.dev_name }}"
+  retry:
+    count: 30
+    delay: 30
+    break-on: "{{task('ping_host').result.return_code == 0}}"
+  on-failure:
+    - handle_error
+  on-complete:
+    - finish_time

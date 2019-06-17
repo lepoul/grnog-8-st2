@@ -1,0 +1,8 @@
+save_bgp_output:
+# Store the BGP status hash retrieved
+# to be used later for the un-drain process
+  action: st2.kv.set_object
+  input:
+    key: "bgp-{{ _.dev_name }}"
+    value: "{{ task('bgp_status').result.result }}"
+    ttl: 3600

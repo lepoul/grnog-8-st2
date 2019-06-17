@@ -1,0 +1,7 @@
+admin_down_downlinks:
+# Load the configuration that drains the switch
+  action: napalm.loadconfig
+  input:
+    config_file: "/srv/st2/static/drain_leaf_config.set"
+    hostname: "{{ _.dev_name }}"
+    driver: "junos"

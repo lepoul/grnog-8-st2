@@ -1,0 +1,11 @@
+|
+├── icon.png
+├── pack.yaml
+├── requirements.txt
+└── rules
+    ├── drain_leaf.yaml
+    ├── fabric_leaf_ztp.yaml
+    ├── junos_upgrade.yaml
+    ├── undrain_leaf.yaml
+    ├── upgrade_fabric.yaml
+    └── upgrade_leaf.yaml

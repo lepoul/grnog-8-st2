@@ -1,0 +1,9 @@
+get_target_version:
+  action: netbox.get.extras.config_contexts
+  input:
+    role: "dc-fabric-leaf"
+  publish:
+    tgt_ver: "{{task('get_target_version').junos_version}}"
+    image_name: "{{task('get_target_version').junos_image}}"
+  on-success:
+    - drain: "{{ _.run_version != _.tgt_ver }}"

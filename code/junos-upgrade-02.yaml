@@ -1,0 +1,14 @@
+qfx5100_upgrade:
+  action: ansible.playbook
+  input:
+    playbook: "/srv/ansible/playbooks/junos-install.yaml"
+    limit: "{{ _.dev_name }}"
+    start_at_task: "Execute a basic Junos software upgrade"
+    extra_vars:
+      - user: "{{}}"
+      - password: "{{ st2kv.system.st2_devices_pass 
+                        | decrypt_kv }}"
+      - force_host: true
+      - remote_pkg: "{{ _.junos_url }}"
+  on-success:
+    - ping_host

@@ -1,0 +1,14 @@
+- name: Execute a basic Junos software upgrade
+  no_log: true
+  juniper_junos_software:
+    user: "{{ usr }}"
+    force_host: True
+    validate: False
+    reboot: True
+    reboot_pause: 10
+    remote_package: "{{ pkg }}"
+    checksum_timeout: 30
+    port: 22
+    password: "{{ passwd }}"
+    timeout: 30
+  register: response

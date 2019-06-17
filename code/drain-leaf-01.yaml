@@ -1,0 +1,13 @@
+netbox_device:
+   action: netbox.get.dcim.devices
+   input:
+     name: "{{ _.dev_name }}"
+   publish:
+     dev_status: "{{ task('netbox_device')..status.label }}"
+     dev_role: "{{task('netbox_device')..device_role.slug }}"
+   on-success:
+     - fail: "{{ _.dev_status != 'Active' 
+                        or _.dev_role != 'dc-fabric-leaf' }}"
+     - bgp_status
+     - admin_down_downlinks
+

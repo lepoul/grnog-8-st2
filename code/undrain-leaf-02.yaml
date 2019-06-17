@@ -1,0 +1,12 @@
+ansible_create_config:
+  action: ansible.playbook
+  input:
+    playbook: "create-config.yml"
+  on-success:
+    - restore_port_state
+
+restore_port_state:
+  join: all
+  action: ansible.playbook
+  input:
+    playbook: "junos-commit-and-confirm.yml"

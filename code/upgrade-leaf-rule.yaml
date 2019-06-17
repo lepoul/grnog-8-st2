@@ -1,0 +1,16 @@
+name: "upgrade_leaf"
+pack: "grnet"
+description: "Full workflow of the JunOS upgrade of a QFX5100"
+enabled: true
+
+trigger:
+  type: "core.st2.webhook"
+  parameters:
+    url: "upgrade_leaf"
+
+criteria: {}
+
+action:
+  ref: "grnet.upgrade-leaf"
+  parameters:
+    upgrade_data: "{{ trigger.body }}"

@@ -1,0 +1,10 @@
+get_version:
+  action: napalm.get_facts
+  input:
+    hostname: "{{ _.upgrade_data['dev_name'] }}"
+    driver: junos
+    credentials: stackstorm
+  publish:
+    run_version: "{{task('get_version').raw['os_version']}}"
+  on-success:
+    - get_target_version
