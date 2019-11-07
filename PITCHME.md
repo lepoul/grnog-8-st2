@@ -8,32 +8,32 @@ Lefteris Poulakakis
 lepou@noc.grnet.gr
 @snapend
 ---
-#### @css[hl](what we have)
+#### @css[hl](network devices fleet)
 @ul[squares]
  - ~50 carrier routers
  - ~150 access switches
  - ~60 datacenter switches
 @ulend
 ---
-#### @css[hl](what we have)
+#### @css[hl](managed using)
 @ul[squares]
  - Ansible for config management
  - Git for VCS
- - Tools managing network infrastructure and services
+ - Internal Service DB and customer DB
 @ulend
 ---
 #### @css[hl](and common workflows...)
 @ul[squares]
  - deployment of new services
- - provisioning of new devices/replacement of faulty ones
- - software upgrades
+ - provisioning of network devices
+ - network OS upgrades
 @ulend 
 ---
 #### @css[hl](...that)
 @ul[squares]
- - are well defined
+ - consist of well defined procedures
  - consume time and human effort
- - although, can be scripted (eg. in runbooks)
+ - sometimes are of mass scale 
 @ulend
 ---
 @snap[west text-08 span-100]
