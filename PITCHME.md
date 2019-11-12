@@ -22,7 +22,7 @@ lepou@noc.grnet.gr
  - Internal Service DB and customer DB
 @ulend
 ---
-#### @css[hl](and common workflows...)
+#### @css[hl](common workflows)
 @ul[squares]
  - deployment of new services
  - provisioning of network devices
