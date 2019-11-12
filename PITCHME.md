@@ -191,6 +191,23 @@ Eq. to a module or a plugin.
 @css[highlight](actions/workflows/undrain-leaf.yaml)
 @snapend
 ---
+#### @css[hl](Zero Touch provisioning)
+@ul[squares]
+ - PXE-like procedure
+ - device in factory default
+ - DHCP server provides a script, which run by the device 
+ - Device triggers a stackstorm workflow.
+ - Stackstorm applies the desired configuration.
+@ulend
+---
+#### @css[hl](Bare Metal Server provisioning)
+@ul[squares]
+ - All BMS are precabled
+ - LACP in the network side is preconfigured
+ - On provisioning BMS can't be LACP aware.
+ - We are integrating stackstorm with System's team tool
+@ulend
+---
 @snap[west text-08 span-100]
 ### @css[hl](some of our use cases)
 @ul[](false)
