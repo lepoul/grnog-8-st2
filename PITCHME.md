@@ -111,7 +111,7 @@ Eq. to a module or a plugin.
 @snap[north text-09 span-60]
 #### @css[hl](Architecture)
 @snapend
-@snap[midpoint span-100]
+@snap[midpoint span-120]
 ![ST2ARCH](assets/img/st2_architecture_diagram.jpg)
 @snapend
 
