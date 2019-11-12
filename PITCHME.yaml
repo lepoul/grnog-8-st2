@@ -37,7 +37,7 @@ footnote: "Stackstorm@GRNET - Orchestration and event-driven automation"
 # Published Setting
 # Doc: https://gitpitch.com/docs/settings/published
 #
-published: false
+published: true
 print-fragments: true
 
 #
