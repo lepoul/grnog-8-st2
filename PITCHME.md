@@ -51,7 +51,7 @@ lepou@noc.grnet.gr
 ---
 #### @css[hl](we need a tool that)
 @ul[squares]
- - @css[highlight](senses) changes at the tools or the network
+ - @css[highlight](senses) changes in the tools or the network
  - @css[highlight](trigger) @css[highlight](actions) based on them
  - can abstract @css[highlight](actions) into complex @css[highlight](workflows)
  - interact with the network and our tools
@@ -62,9 +62,9 @@ lepou@noc.grnet.gr
 @snapend
 @ul[squares]
 - solid base featureset
-- Lots of intergration with other tools  (ST2 calls them @css[highlight](packs))
-- Support for "standard" wordflow language (Openstack's @css[highlight](Mistral))
-- Native intergration with network infrastructure (with @css[highlight](NAPALM) pack)
+- Lots of integration with other tools  (ST2 calls them @css[highlight](packs))
+- Support for "standard" workflow language (Openstack's @css[highlight](Mistral))
+- Native integration with network infrastructure (with @css[highlight](NAPALM) pack)
 @ulend
 ---
 @snap[west span-60]
@@ -74,7 +74,7 @@ lepou@noc.grnet.gr
 
 @snap[north-east text-left text-07 fragment span-50]
 @css[hl](Sensors)  
-Inbound/Outbound intergration. Receive/poll for events.
+Inbound/Outbound integration. Receive/poll for events.
 @snapend
 
 @snap[east text-07 text-left fragment span-50]
@@ -84,7 +84,7 @@ Result of an activated sensor.
 
 @snap[south-east text-07 text-left fragment span-50]
 @css[hl](Actions)  
-Outbound intergrations. A REST API call, an ansible playbook or a custom script.
+Outbound integrations. A REST API call, an ansible playbook or a custom script.
 @snapend
 ---
 @snap[west span-60]
