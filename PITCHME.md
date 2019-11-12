@@ -29,10 +29,10 @@ lepou@noc.grnet.gr
  - network OS upgrades
 @ulend 
 ---
-#### @css[hl](...that)
+#### @css[hl](the problem)
 @ul[squares]
- - consist of well defined procedures
- - consume time and human effort
+ - although there are well defined procedures
+ - consume lots of time and human effort
  - sometimes are of mass scale 
 @ulend
 ---
@@ -41,8 +41,8 @@ lepou@noc.grnet.gr
 @ul
 - Datacenter switches mass upgrade
 - Zero Touch Provisioning
-- Auto-deployment of our Ansible repo changes
 - Network Ops tasks part of BMS autoprovision
+- Auto-deployment of our Ansible repo changes
 @ulend
 @snapend
 ---
