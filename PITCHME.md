@@ -196,8 +196,8 @@ Eq. to a module or a plugin.
 @ul[](false)
 - Datacenter switches mass upgrade (done for leaf switches)
 - Zero Touch Provisioning (done)
-- Network Ops tasks part of BMS autoprovision (developing)
-- Auto-deployment of our Ansible repo changes (brainstorming)
+- Network configuration as a part of BMS autoprovision (developing)
+- Auto-deployment of our Ansible repo changes (experimenting)
 @ulend
 @snapend
 ---
